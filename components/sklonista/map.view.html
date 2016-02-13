@@ -1,0 +1,17 @@
+<ui-gmap-google-map center='lc.map.center' zoom='lc.map.zoom' options='lc.map.options'>
+    <ui-gmap-markers models='lc.markers'
+                     idKey="'idKey'"
+                     coords="'self'"
+                     icon="'icon'"
+                     click="lc.onClick(idKey)">
+        <ui-gmap-windows options="lc.windowOptions" show="show" closeClick="'lc.closeClick()'">
+            <div ng-non-bindable>
+                <p>{{naziv}}</p>
+                <p>{{adresa}}</p>
+                <p>{{telefon}}</p>
+                <p><a href="{{web}}" target="_blank" style="color: black">{{web}}</a></p>
+            </div>
+        </ui-gmap-windows>
+    </ui-gmap-markers>
+</ui-gmap-google-map>
+

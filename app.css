@@ -1,0 +1,141 @@
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'Poppins', serif;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.angular-google-map-container{
+    flex:2;
+    height: 100vh;
+    align-self: stretch;
+}
+
+.data-container{
+    flex:1;
+    -webkit-flex-flow: column;
+    flex-flow: column ;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    background-color: #FFEB3B;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    flex:1;
+    font-size: 2.1vw;
+    color: black;
+    padding-left: 1%;
+    border-bottom: 1px solid white;
+}
+
+.subtitle{
+    color: black;
+}
+
+.content{
+    flex:1;
+    text-transform: capitalize;
+    font-size: 1vw;
+    color: black;
+}
+
+.content:hover{
+    background-color: #FDD835;
+}
+
+.content-info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: stretch;
+    border-bottom: 1px solid white;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.info-name{
+    padding-left: 1%;
+}
+
+.info-address{
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.info-telephone{
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+/* scrollable */
+.scrollable{
+    overflow-x: hidden;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+    background-color: #c4c4c3;
+}
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    .title {
+        font-size: 3vw;
+    }
+
+    .subtitle{
+        font-size: 2.4vw;
+    }
+
+    .content {
+        flex: 1;
+        text-transform: capitalize;
+        font-size: 2vw;
+    }
+}
+/* Small screens */
+@media all and (max-width: 500px) {
+    .title{
+        font-size: 3vw;
+    }
+
+    .subtitle{
+        font-size: 2.4vw;
+    }
+
+    .content{
+        font-size: 2vw;
+    }
+}

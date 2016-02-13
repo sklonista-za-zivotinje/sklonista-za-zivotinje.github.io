@@ -1,0 +1,10 @@
+{
+  "name": "Skloništa za životinje",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Popis skolništa za životinje u Hrvatskoj",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.1"
+  }
+}

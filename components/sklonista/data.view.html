@@ -1,0 +1,15 @@
+
+<h2 class="title"><i class="fa fa-paw fa-2x"></i> Popis skolništa za životinje u Hrvatskoj</h2>
+<div ng-repeat="d in lc.data track by $index" class="content" ng-click="lc.centerMap(d.cords)">
+    <div class="info-name"><b>{{d.naziv}}</b></div>
+    <div class="content-info-container">
+        <div class="info-address">
+            <p>{{d.adresa}}</p>
+            <p>{{d.mjesto}} {{d.posta}}</p>
+        </div>
+        <div class="info-telephone">
+            <p>{{d.telefon}}</p>
+            <!--<a href="{{d.web}}" target="_blank"><i class="fa fa-link"></i></a>-->
+        </div>
+    </div>
+</div>

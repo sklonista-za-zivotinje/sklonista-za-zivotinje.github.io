@@ -1,0 +1,13 @@
+{
+  "name": "Skloništa za životinje",
+  "description": "Popis skolništa za životinje u Hrvatskoj",
+  "version": "1.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.18",
+    "angular-google-maps": "latest"
+  }
+}
